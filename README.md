@@ -8,6 +8,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+## template ref
+
+- https://github.com/NextJSTemplates/play-nextjs/blob/main/src/app/page.tsx
+- https://github.com/lixwen/next-freeaitools/blob/main/src/app/page.js
+
 ```bash
 npm run dev
 # or
