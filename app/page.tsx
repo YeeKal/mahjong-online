@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeToggle from "@/components/common/ThemeToggle";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="w-full flex items-center justify-center py-8"><ThemeToggle/></div>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
