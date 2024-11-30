@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    nv: {
-        BASE_URL: process.env.BASE_URL || 'http://10.8.106.60:3000',
-      },
+    // nv: {
+    //     BASE_URL: process.env.BASE_URL || 'http://10.8.106.60:3000',
+    //   },
       images: {
         remotePatterns: [{
           protocol: 'https',
@@ -31,7 +31,7 @@ const nextConfig = {
           pathname: '/**'
         },{
           protocol: 'https',
-          hostname: 'cdn.spunki.games',
+          hostname: 'cdn.mahjongonline.cc',
           port: '',
           pathname: '/**'
         }]

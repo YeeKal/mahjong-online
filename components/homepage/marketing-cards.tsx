@@ -90,9 +90,9 @@ const SpringAnimatedFeatures = () => {
         </p>
       </div>
       <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {ProjectsData.map((project) => {
+        {ProjectsData.map((project, index) => {
           return (
-            <div className='rounded-md shadow-lg border p-4 mt-5'>
+            <div key={index} className='rounded-md shadow-lg border p-4 mt-5'>
               <Link href={project?.url} target="_blank" rel="noopener noreferrer" >
                 <Image
                   src={project?.imageDark ? project?.imageDark : project.image}

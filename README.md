@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## TODO
+
+- game switch
+- review schema
+- twitter review
+- language support
+
 ## Getting Started
 
 - Shadcn UI： npx shadcn@latest init
