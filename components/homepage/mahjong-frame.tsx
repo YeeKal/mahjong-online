@@ -38,7 +38,8 @@ interface AsyncRufflePlayerProps {
 }
 
 export default function AsyncRufflePlayer() {
-  const swfUrl = "https://oldflashgames.github.io/games4/mahjong.swf";
+  // const swfUrl = "https://oldflashgames.github.io/games4/mahjong.swf";
+  const swfUrl = "/mahjong.swf";
   const containerRef = useRef<HTMLDivElement>(null)
   const playerRef = useRef<any>(null)
   const [error, setError] = useState<string | null>(null)
