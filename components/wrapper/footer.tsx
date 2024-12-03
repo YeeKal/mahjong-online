@@ -53,6 +53,7 @@ export default function Footer() {
                                         <a key={index} href={link.href} className=" transition hover:opacity-75 hover:text-teal-600"> {link.text} </a>
                                     ))
                                 }
+                                <a href={"https://github.com/YeeKal/mahjong-online"} className=" transition hover:opacity-75 hover:text-teal-600"> {"Open Mahjong Online"} </a>
                             </div>
                         </div>
                     </div>

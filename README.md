@@ -1,52 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [Open Mahjong Online](https://www.mahjongonline.cc/)
 
-## TODO
+An open-source online Mahjong game built with Next.js and modern web technologies. Play Mahjong online in a beautiful, responsive interface. We use [ruffle](https://ruffle.rs/) to load flash game to make flash game compatible with modern browsers.
 
-- game switch
-- review schema
-- twitter review
-- language support
+- [Play Mahjong online](https://www.mahjongonline.cc/)
+- [Mahjong swf file](https://cdn.mahjongonline.cc/resources/mahjong.swf)
 
-## Getting Started
+[![mahjong online](public/imgs/mahjong-loading-background.png)](https://www.mahjongonline.cc/)
 
-- Shadcn UI： npx shadcn@latest init
-- next theme： npm install next-themes
-- npm install lucide-react
+## Game rules
 
-First, run the development server:
+- A tile is considered open or exposed when it can be moved either left or right without disturbing other tiles`,
+- Match and remove open pairs of identical tiles from the board`,
+- Any two seasons can form a pair, as can any two flowers`,
+- The game ends when no legal moves can be made`,
 
-## template ref
+## Features
 
-- https://github.com/NextJSTemplates/play-nextjs/blob/main/src/app/page.tsx
-- https://github.com/lixwen/next-freeaitools/blob/main/src/app/page.js
+- 🎮 Multiple Mahjong game variants support(in progress)
+- 🎨 Beautiful UI with Shadcn UI components
+- 🌓 Dark/Light theme support
+- 🌍 Multi-language support (in progress)
+- 📱 Responsive design for all devices
+- 💬 Player review system
 
+## Tech Stack
+
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI
+- **Icons**: Lucide React
+- **Theme**: Next-themes
+- **Analytics**: Vercel Analytics
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- npm or yarn
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/mahjong.git
+cd mahjong
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+mahjong/
+├── app/                # Next.js app directory
+├── components/         # Reusable UI components
+├── public/            # Static assets
+└── styles/           # Global styles
+```
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+To start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Other available commands:
+- `npm run build` - Build the production application
+- `npm run start` - Start a production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## TODO
+
+- [ ] Game switch functionality
+- [ ] Review schema implementation
+- [ ] Twitter review integration
+- [ ] Enhanced language support
+
+## Credits
+
+- UI Template references:
+  - [Play NextJS Template](https://github.com/NextJSTemplates/play-nextjs)
+  - [Next Free AI Tools](https://github.com/lixwen/next-freeaitools)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
