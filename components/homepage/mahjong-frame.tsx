@@ -115,6 +115,19 @@ export default function AsyncRufflePlayer() {
       loadRuffle()
     }
   }
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AggregateRating',
+    "itemReviewed": {
+      "@type": "Game",
+      "image": "/imgs/mahjong-loading-background.png",
+      "name": "Mahjong Online",
+    },
+    "ratingValue": 4.8,
+    "bestRating": 5,
+    "worstRating": 1,
+    "ratingCount":14030,
+  }
 
   return (
     <div id="mahjong-frame" className="flex flex-col items-center w-full max-w-6xl ">
@@ -156,6 +169,10 @@ export default function AsyncRufflePlayer() {
           setError('Failed to load game player')
           setIsLoading(false)
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
     </div>
     // <Card className="max-w-6xl mx-auto h-screen max-h-[min(100vw,100vh)] aspect-square">
