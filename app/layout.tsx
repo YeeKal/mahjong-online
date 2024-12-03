@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import PageWrapper from "@/components/wrapper/page-wrapper";
 import {SITE_CONFIG} from '@/lib/constants'
 import { Analytics } from '@vercel/analytics/react'
+import GoogleAnalytics from '@/components/analytics/google-analytics'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +44,7 @@ export default function RootLayout({
           <PageWrapper>
             {children}
             <Analytics />
+            <GoogleAnalytics />
           </PageWrapper>
       </ThemeProvider>
       </body>
